@@ -1,0 +1,309 @@
+.error {
+  color: #f12a2a;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 0.25rem;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.sign-form {
+  width: 95%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.sign-form label {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  margin: 1rem 0 0.2rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.65rem 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  border: 2px solid #4a5568;
+  background-color: white;
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #4299e1;
+}
+
+input::placeholder,
+select::placeholder {
+  color: #a0aec0;
+}
+
+input[type="checkbox"] {
+  width: fit-content;
+  margin-right: 0.5rem;
+  transform: scale(1.25);
+}
+
+button {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.35rem 0.5rem;
+  background-color: #4299e1;
+  color: #1a202c;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input.input-error,
+select.input-error {
+  border-color: #fc8181;
+}
+
+button:disabled {
+  opacity: 0.35;
+}
+
+.home {
+  padding: 10rem;
+}
+
+/* main */
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --bodyBackground: #f2f4f8;
+  --successGreen: rgb(19, 181, 221);
+  --buttonColour: rgb(128, 0, 0);
+  --dangerRed: #ffc0c7;
+  --questionBG: #e4e8ee;
+  --fontPrimary: #002333;
+  --active: #2dbf64;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--fontPrimary);
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--bodyBackground);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(19, 181, 221);
+}
+
+h4 {
+  color: #7c83a7;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.sign-info {
+  margin-top: 1rem;
+  text-align: center;
+  /* background-color: red; */
+}
+.link {
+  color: var(--buttonColour);
+  font-weight: bold;
+}
+
+.error {
+  background-color: var(--dangerRed);
+  padding: 0.6rem 1.2rem;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.sign-form-container {
+  width: 50rem;
+  height: 35rem;
+  padding: 5rem;
+  margin-left: 12rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(128, 0, 0, 0.3), 0 4px 8px rgba(128, 0, 0, 0.6);
+}
+.sign-form-container h1 {
+  color: rgba(128, 0, 0);
+  padding-left: 4rem;
+}
+
+/* layout component */
+.sign-main {
+  width: 100%;
+  padding: 3rem 0;
+  padding-bottom: 10rem;
+}
+
+.sign-container {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+/* text input component */
+.textInput {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  padding: 2px;
+}
+
+.textInput input {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  padding: 0.3rem 0.7rem;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.textInput span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* button component */
+.button {
+  background: var(--buttonColour);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 0px;
+}
+
+.button:hover {
+  background: var(--fontPrimary);
+  color: #fff;
+}
+
+.button:hover span {
+  color: #fff;
+}
+
+/* login component */
+.sign-login {
+  height: 330px;
+}
+
+.sign-form label {
+  margin-top: 1rem;
+}
+
+.sign-form .button {
+  height: 44px;
+  margin-top: 2rem;
+}
+
+.choose-button {
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  /* background-color: red; */
+  margin-left: 9.5rem;
+  /* margin-top: 2rem; */
+}
+.div-button {
+  margin: 2rem;
+}
+
+.H {
+  color: var(--buttonColour);
+  /* padding-left: 10rem; */
+  margin-top: 4rem;
+  margin-left: 6.5rem;
+  /* background-color: red; */
+}
+
+.P {
+  font-weight: bold;
+  margin-left: 9rem;
+  margin-top: 3rem;
+}
+
+.close {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 19.5rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  border: solid 1.7px var(--buttonColour);
+}
+
+.close :hover {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.route-form-container {
+  width: 45rem;
+  height: 34rem;
+  /* padding: 5rem; */
+  margin-left: 12rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(128, 0, 0, 0.3), 0 4px 8px rgba(128, 0, 0, 0.6);
+}
+
+.route-close {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10rem;
+  /* margin-top: 2rem; */
+  border-radius: 1rem;
+  border: solid 1.7px var(--buttonColour);
+}
+
+.route-close :hover {
+  height: 2.5rem;
+  width: 2.5rem;
+}
